@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "485484029514",
+    "project_id": "informame-4a332",
+    "storage_bucket": "informame-4a332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485484029514:android:8a0941d446a73bd0be68b3",
+        "android_client_info": {
+          "package_name": "com.example.news_app_clean_architecture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx8C3vvwL3OzEcn25xsGHeB2h-zjWaVjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

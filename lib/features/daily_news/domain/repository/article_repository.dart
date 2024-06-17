@@ -11,4 +11,9 @@ abstract class ArticleRepository {
   Future < void > saveArticle(ArticleEntity article);
 
   Future < void > removeArticle(ArticleEntity article);
+
+  // Firebase methods
+  Future<void> addUserArticle(Map<String, dynamic> articleData);
+
+  Future<List<Map<String, dynamic>>> getUserArticles();
 }

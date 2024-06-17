@@ -7,17 +7,23 @@ import 'package:news_app_clean_architecture/features/daily_news/presentation/blo
 import '../../../domain/entities/article.dart';
 import '../../widgets/article_tile.dart';
 
-class DailyNews extends StatelessWidget {
+class DailyNews extends StatefulWidget {
   const DailyNews({ Key? key }) : super(key: key);
+
+  @override
+  State<DailyNews> createState() => _DailyNewsState();
+}
+
+class _DailyNewsState extends State<DailyNews> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppbar(context),
-      body: _buildBody() ,
+      body: _buildBody(),
     );
   }
-  
+
   _buildAppbar(BuildContext context) {
     return AppBar(
       title: const Text(
@@ -62,6 +68,7 @@ class DailyNews extends StatelessWidget {
       },
     );
   }
+}
 
   void _onArticlePressed(BuildContext context, ArticleEntity article) {
     Navigator.pushNamed(context, '/ArticleDetails', arguments: article);
@@ -70,5 +77,5 @@ class DailyNews extends StatelessWidget {
   void _onShowSavedArticlesViewTapped(BuildContext context) {
     Navigator.pushNamed(context, '/SavedArticles');
   }
-  
-}
+
+
